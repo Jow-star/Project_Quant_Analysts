@@ -1,0 +1,10 @@
+streamlit
+pandas
+numpy
+matplotlib
+plotly
+requests
+finnhub-python
+scikit-learn
+yfinance
+streamlit-autorefresh
