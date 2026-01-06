@@ -1,0 +1,12 @@
+# ============================================================
+# CONFIGURATION DU CRON (LINUX)
+# ============================================================
+# Cette ligne doit être ajoutée via la commande : crontab -e
+
+# Syntaxe : m h  dom mon dow   command
+# Explication : 
+# m=0, h=20 : À 20h00 pile
+# * * *     : Tous les jours, tous les mois
+# command   : Lancer python3 sur le script de génération de rapport
+
+0 20 * * * /usr/bin/python3 /home/etudiant/Projet_finance/report_generator.py >> /home/etudiant/Projet_finance/reports/cron_log.log 2>&1
